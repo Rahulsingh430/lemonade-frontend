@@ -52,12 +52,19 @@
   margin-left: 0;
   margin-bottom: 2%;
 }
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 4%;
+}
 /* ********************************* */
 li {
   list-style: none;
 }
 .one {
   position: relative;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
 }
 .one img {
   width: 25%;
@@ -66,33 +73,33 @@ li {
 }
 .name {
   margin: 1%;
-  text-decoration: none;
-  color: black;
-  position: absolute;
-  font-size: 24px;
-  top: 0%;
-  left: 25%;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    font-size: 24px;
+    top: 85%;
+    left: 1%;
 }
 .price {
-  margin: 13%;
+  margin: 0%;
   text-decoration: none;
-  color: black;
-  position: absolute;
-  font-size: 23px;
-  left: 14%;
-  top: 2%;
+    color: black;
+    position: absolute;
+    font-size: 23px;
+    left: 20%;
+    top: 91%;
 }
 .btn1 {
-  border: 1px solid #a4c703;
-  font-size: 20px;
-  padding: 5px 15px;
-  color: #e4e4e4;
-  background-color: #a4c703;
-  position: absolute;
-  right: 12%;
-  border-radius: 6px;
-  top: 65%;
-  cursor: pointer;
+    border: 1px solid #a4c703;
+    font-size: 20px;
+    padding: 5px 15px;
+    color: #ffffff;
+    background-color: #a4c703;
+    position: absolute;
+    right: 8%;
+    border-radius: 6px;
+    top: 80%;
+    cursor: pointer;
 }
 
 .sign1 {
