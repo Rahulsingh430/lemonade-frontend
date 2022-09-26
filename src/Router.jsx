@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Cart from "./containers/Cart";
 import Home from "./containers/Home";
 import Shipping from "./containers/Shipping";
@@ -10,18 +10,20 @@ import OrderConfirmation from "./containers/Thankyou";
 const Router = () => {
   return (
     <>
-      <Switch>
-        <Route exact path={"/"} component={Home} />
-        <Route exact path={"/signup"} component={SignUp} />
-        <Route exact path={"/signin"} component={Signin} />
-        <Route exact path={"/cart"} component={Cart} />
-        <Route exact path={"/shipping"} component={Shipping} />
-        <Route
-          exact
-          path={"/Thankyou"}
-          component={OrderConfirmation}
-        />
-      </Switch>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/signup"} element={<SignUp />} />
+          <Route path={"/signin"} element={<Signin />} />
+          <Route path={"/cart"} element={<Cart/>} />
+          <Route path={"/shipping"} element={<Shipping/>} />
+          <Route
+          
+            path={"/Thankyou"}
+            element={<OrderConfirmation/>}
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

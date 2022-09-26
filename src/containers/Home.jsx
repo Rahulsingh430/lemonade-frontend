@@ -24,8 +24,8 @@ const Home = () => {
       <MainImage />
       <section class="mainpage">
         <ul class="items">
-          {items &&
-            items.map((item) => (
+          {items && items.results && items.results.length > 0 &&
+            items.results.map((item) => (
               <li>
                 <Item key={item.id} item={item} />
               </li>

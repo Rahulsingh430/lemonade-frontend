@@ -10,7 +10,7 @@ var baseURL;
 // } else 
 // baseURL = "http://127.0.0.1:8000";
 // }
-baseURL = "https://lemonade-backend.herokuapp.com/";
+baseURL = "https://lemonade-backend.rahulsingh430.repl.co/";
 
 const api = axios.create({
   baseURL: baseURL,
